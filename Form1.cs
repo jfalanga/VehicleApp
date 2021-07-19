@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace VehicleApp
 {
-    public partial class Form1 : Form
+    public partial class VehicleInventoryForm : Form
     {
-        public Form1()
+        public VehicleInventoryForm()
         {
             InitializeComponent();
         }
 
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

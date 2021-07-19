@@ -20,5 +20,16 @@ namespace VehicleApp
             get { return maxPass; }
         }
 
+        public override string GetDescription()
+        {
+            return ToString()
+                + ", and " + Wheels + ". The Maximum number of Passengers are: "
+                + MaxPassengers;
+        }
+
+        public override string ToString()
+        {
+            return "Sedan, with License Plate: " + LicensePlate + ", and VIN " + VIN;
+        }
     }
 }

@@ -36,9 +36,10 @@ namespace VehicleApp
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtLicense = new System.Windows.Forms.TextBox();
             this.BtnAdd = new System.Windows.Forms.Button();
+            this.TxtVIN = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.NewVehicleTab.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -58,9 +59,10 @@ namespace VehicleApp
             // 
             // NewVehicleTab
             // 
+            this.NewVehicleTab.Controls.Add(this.comboBox1);
+            this.NewVehicleTab.Controls.Add(this.TxtVIN);
             this.NewVehicleTab.Controls.Add(this.BtnAdd);
-            this.NewVehicleTab.Controls.Add(this.textBox2);
-            this.NewVehicleTab.Controls.Add(this.textBox1);
+            this.NewVehicleTab.Controls.Add(this.TxtLicense);
             this.NewVehicleTab.Controls.Add(this.label3);
             this.NewVehicleTab.Controls.Add(this.label2);
             this.NewVehicleTab.Controls.Add(this.label1);
@@ -119,19 +121,12 @@ namespace VehicleApp
             this.listBox1.Size = new System.Drawing.Size(321, 84);
             this.listBox1.TabIndex = 1;
             // 
-            // textBox1
+            // TxtLicense
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(108, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 4;
+            this.TxtLicense.Location = new System.Drawing.Point(108, 0);
+            this.TxtLicense.Name = "TxtLicense";
+            this.TxtLicense.Size = new System.Drawing.Size(125, 27);
+            this.TxtLicense.TabIndex = 3;
             // 
             // BtnAdd
             // 
@@ -142,6 +137,21 @@ namespace VehicleApp
             this.BtnAdd.Text = "Add";
             this.BtnAdd.UseVisualStyleBackColor = true;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
+            // 
+            // TxtVIN
+            // 
+            this.TxtVIN.Location = new System.Drawing.Point(108, 34);
+            this.TxtVIN.Name = "TxtVIN";
+            this.TxtVIN.Size = new System.Drawing.Size(125, 27);
+            this.TxtVIN.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(108, 74);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(125, 28);
+            this.comboBox1.TabIndex = 7;
             // 
             // VehicleInventoryForm
             // 
@@ -164,13 +174,14 @@ namespace VehicleApp
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage NewVehicleTab;
         private System.Windows.Forms.Button BtnAdd;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtLicense;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox TxtVIN;
     }
 }
 

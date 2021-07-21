@@ -168,6 +168,7 @@ namespace VehicleApp
             this.LstInventory.Name = "LstInventory";
             this.LstInventory.Size = new System.Drawing.Size(235, 184);
             this.LstInventory.TabIndex = 1;
+            this.LstInventory.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListInventory_MDoubleClick);
             // 
             // TxtSummery
             // 

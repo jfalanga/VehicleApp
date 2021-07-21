@@ -46,5 +46,11 @@ namespace VehicleApp
         {
             LstInventory.DataSource = vehicles;
         }
-    }
+
+        private void ListInventory_MDoubleClick(object sender, MouseEventArgs e)
+        {
+            Vehicle myVehicle = LstInventory.SelectedItem as Vehicle;
+            TxtSummery.Text = myVehicle.GetDescription();
+        }
+   
 }

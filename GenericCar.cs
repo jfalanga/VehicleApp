@@ -18,6 +18,17 @@ namespace VehicleApp
             }
         }
 
-        
+        public override string ToString()
+        {
+            return  VehicleType+ ", with License Plate: " + LicensePlate + ", and VIN " + VIN;
+        }
+
+        public override string GetDescription()
+        {
+            return ToString()
+                + ", and " + Wheels + " wheels. The Maximum number of Passengers are: "
+                + MaxPassengers;
+        }
+
     }
 }

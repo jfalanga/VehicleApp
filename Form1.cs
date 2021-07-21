@@ -20,6 +20,7 @@ namespace VehicleApp
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
+        
         {
             Vehicle v;
             try
@@ -29,13 +30,19 @@ namespace VehicleApp
                     case "Sedan":
                         v = new Sedan();
                         break;
+                    case "Truck":
+                        v = new Truck();
+                        break;
                     default:
+                        textBox1.Text = "There needs to be, at least, something in Vehicle Type!";
                         return;
                 }
                 v.LicensePlate = TxtLicense.Text;
                 v.VIN = TxtVIN.Text;
                 vehicles.Add(v);
+                LstInventory.DataSource = vehicles;
                 textBox1.Text = "Sucessfully added " + v.VehicleType;
+
             }
             catch (Exception prob)
             {
@@ -45,7 +52,7 @@ namespace VehicleApp
 
         private void TabInventory_Click(object sender, EventArgs e)
         {
-            LstInventory.DataSource = vehicles;
+            
         }
 
         private void ListInventory_MDoubleClick(object sender, MouseEventArgs e)

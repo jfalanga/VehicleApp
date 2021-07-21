@@ -6,30 +6,26 @@ using System.Threading.Tasks;
 
 namespace VehicleApp
 {
-    class Sedan: GenericCar
+    class Truck: GenericCar
     {
-        private int maxPass;
-        public Sedan()
-        { 
+        private int maxpass;
+        public Truck()
+        {
 
-            maxPass = 5;
+            maxpass = 3;
         }
-
-
         public override int MaxPassengers
         {
             get
             {
-                return maxPass;
+                return maxpass;
             }
         }
-
-
         public override string VehicleType
         {
             get
             {
-                return "Sedan";
+                return "Truck";
             }
         }
     }

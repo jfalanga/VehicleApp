@@ -40,8 +40,8 @@ namespace VehicleApp
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TabInventory = new System.Windows.Forms.TabPage();
-            this.LstInventory = new System.Windows.Forms.ListBox();
             this.TxtSummery = new System.Windows.Forms.TextBox();
+            this.LstInventory = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.TabNewVeh.SuspendLayout();
             this.TabInventory.SuspendLayout();
@@ -90,7 +90,8 @@ namespace VehicleApp
             // 
             this.CBxVType.FormattingEnabled = true;
             this.CBxVType.Items.AddRange(new object[] {
-            "Sedan"});
+            "Sedan",
+            "Truck"});
             this.CBxVType.Location = new System.Drawing.Point(108, 90);
             this.CBxVType.Name = "CBxVType";
             this.CBxVType.Size = new System.Drawing.Size(125, 28);
@@ -160,6 +161,15 @@ namespace VehicleApp
             this.TabInventory.UseVisualStyleBackColor = true;
             this.TabInventory.Click += new System.EventHandler(this.TabInventory_Click);
             // 
+            // TxtSummery
+            // 
+            this.TxtSummery.Location = new System.Drawing.Point(7, 196);
+            this.TxtSummery.Multiline = true;
+            this.TxtSummery.Name = "TxtSummery";
+            this.TxtSummery.ReadOnly = true;
+            this.TxtSummery.Size = new System.Drawing.Size(234, 106);
+            this.TxtSummery.TabIndex = 2;
+            // 
             // LstInventory
             // 
             this.LstInventory.FormattingEnabled = true;
@@ -169,15 +179,6 @@ namespace VehicleApp
             this.LstInventory.Size = new System.Drawing.Size(235, 184);
             this.LstInventory.TabIndex = 1;
             this.LstInventory.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListInventory_MDoubleClick);
-            // 
-            // TxtSummery
-            // 
-            this.TxtSummery.Location = new System.Drawing.Point(7, 196);
-            this.TxtSummery.Multiline = true;
-            this.TxtSummery.Name = "TxtSummery";
-            this.TxtSummery.ReadOnly = true;
-            this.TxtSummery.Size = new System.Drawing.Size(234, 106);
-            this.TxtSummery.TabIndex = 2;
             // 
             // VehicleInventoryForm
             // 

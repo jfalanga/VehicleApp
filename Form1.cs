@@ -36,7 +36,8 @@ namespace VehicleApp
                 v.VIN = TxtVIN.Text;
                 vehicles.Add(v);
                 textBox1.Text = "Sucessfully added " + v.VehicleType;
-            } catch (Exception prob)
+            }
+            catch (Exception prob)
             {
                 textBox1.Text = prob.ToString();
             }
@@ -52,5 +53,5 @@ namespace VehicleApp
             Vehicle myVehicle = LstInventory.SelectedItem as Vehicle;
             TxtSummery.Text = myVehicle.GetDescription();
         }
-   
+    }
 }

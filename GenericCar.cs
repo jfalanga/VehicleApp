@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace VehicleApp
 {
-    class GenericCar: Vehicle
+    abstract class GenericCar: Vehicle
     {
         private int wheels=4;
 
+        public override int Wheels
+        {
+            get
+            {
+                return wheels;
+            }
+        }
+
+        
     }
 }

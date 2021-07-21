@@ -18,5 +18,7 @@ namespace VehicleApp
 
         public abstract string GetDescription();
 
+        public abstract string VehicleType { get; }
+
     }
 }

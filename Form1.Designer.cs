@@ -30,107 +30,82 @@ namespace VehicleApp
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.NewVehicleTab = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.TxtLicense = new System.Windows.Forms.TextBox();
-            this.BtnAdd = new System.Windows.Forms.Button();
+            this.TabNewVeh = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CBxVType = new System.Windows.Forms.ComboBox();
             this.TxtVIN = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.BtnAdd = new System.Windows.Forms.Button();
+            this.TxtLicense = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TabInventory = new System.Windows.Forms.TabPage();
+            this.LblInventory = new System.Windows.Forms.ListBox();
+            this.TxtSummery = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
-            this.NewVehicleTab.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.TabNewVeh.SuspendLayout();
+            this.TabInventory.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Right;
-            this.tabControl1.Controls.Add(this.NewVehicleTab);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Controls.Add(this.TabNewVeh);
+            this.tabControl1.Controls.Add(this.TabInventory);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(420, 290);
+            this.tabControl1.Size = new System.Drawing.Size(281, 316);
             this.tabControl1.TabIndex = 0;
             // 
-            // NewVehicleTab
+            // TabNewVeh
             // 
-            this.NewVehicleTab.Controls.Add(this.comboBox1);
-            this.NewVehicleTab.Controls.Add(this.TxtVIN);
-            this.NewVehicleTab.Controls.Add(this.BtnAdd);
-            this.NewVehicleTab.Controls.Add(this.TxtLicense);
-            this.NewVehicleTab.Controls.Add(this.label3);
-            this.NewVehicleTab.Controls.Add(this.label2);
-            this.NewVehicleTab.Controls.Add(this.label1);
-            this.NewVehicleTab.Location = new System.Drawing.Point(4, 4);
-            this.NewVehicleTab.Name = "NewVehicleTab";
-            this.NewVehicleTab.Padding = new System.Windows.Forms.Padding(3);
-            this.NewVehicleTab.Size = new System.Drawing.Size(386, 282);
-            this.NewVehicleTab.TabIndex = 0;
-            this.NewVehicleTab.Text = "tabPage1";
-            this.NewVehicleTab.UseVisualStyleBackColor = true;
+            this.TabNewVeh.Controls.Add(this.textBox1);
+            this.TabNewVeh.Controls.Add(this.CBxVType);
+            this.TabNewVeh.Controls.Add(this.TxtVIN);
+            this.TabNewVeh.Controls.Add(this.BtnAdd);
+            this.TabNewVeh.Controls.Add(this.TxtLicense);
+            this.TabNewVeh.Controls.Add(this.label3);
+            this.TabNewVeh.Controls.Add(this.label2);
+            this.TabNewVeh.Controls.Add(this.label1);
+            this.TabNewVeh.Location = new System.Drawing.Point(4, 4);
+            this.TabNewVeh.Name = "TabNewVeh";
+            this.TabNewVeh.Padding = new System.Windows.Forms.Padding(3);
+            this.TabNewVeh.Size = new System.Drawing.Size(247, 308);
+            this.TabNewVeh.TabIndex = 0;
+            this.TabNewVeh.Text = "New Vehicle Form";
+            this.TabNewVeh.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // textBox1
             // 
-            this.tabPage2.Controls.Add(this.listBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(386, 282);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(8, 179);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(225, 123);
+            this.textBox1.TabIndex = 8;
             // 
-            // label1
+            // CBxVType
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "License";
+            this.CBxVType.FormattingEnabled = true;
+            this.CBxVType.Items.AddRange(new object[] {
+            "Sedan"});
+            this.CBxVType.Location = new System.Drawing.Point(108, 90);
+            this.CBxVType.Name = "CBxVType";
+            this.CBxVType.Size = new System.Drawing.Size(125, 28);
+            this.CBxVType.TabIndex = 7;
             // 
-            // label2
+            // TxtVIN
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "VIN";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Vehicle Type:";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(32, 19);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(321, 84);
-            this.listBox1.TabIndex = 1;
-            // 
-            // TxtLicense
-            // 
-            this.TxtLicense.Location = new System.Drawing.Point(108, 0);
-            this.TxtLicense.Name = "TxtLicense";
-            this.TxtLicense.Size = new System.Drawing.Size(125, 27);
-            this.TxtLicense.TabIndex = 3;
+            this.TxtVIN.Location = new System.Drawing.Point(108, 50);
+            this.TxtVIN.Name = "TxtVIN";
+            this.TxtVIN.Size = new System.Drawing.Size(125, 27);
+            this.TxtVIN.TabIndex = 6;
             // 
             // BtnAdd
             // 
-            this.BtnAdd.Location = new System.Drawing.Point(108, 130);
+            this.BtnAdd.Location = new System.Drawing.Point(69, 133);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(94, 29);
             this.BtnAdd.TabIndex = 5;
@@ -138,33 +113,83 @@ namespace VehicleApp
             this.BtnAdd.UseVisualStyleBackColor = true;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
-            // TxtVIN
+            // TxtLicense
             // 
-            this.TxtVIN.Location = new System.Drawing.Point(108, 34);
-            this.TxtVIN.Name = "TxtVIN";
-            this.TxtVIN.Size = new System.Drawing.Size(125, 27);
-            this.TxtVIN.TabIndex = 6;
+            this.TxtLicense.Location = new System.Drawing.Point(108, 16);
+            this.TxtLicense.Name = "TxtLicense";
+            this.TxtLicense.Size = new System.Drawing.Size(125, 27);
+            this.TxtLicense.TabIndex = 3;
             // 
-            // comboBox1
+            // label3
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(108, 74);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 28);
-            this.comboBox1.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Vehicle Type:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(69, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "VIN";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(45, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "License";
+            // 
+            // TabInventory
+            // 
+            this.TabInventory.Controls.Add(this.TxtSummery);
+            this.TabInventory.Controls.Add(this.LblInventory);
+            this.TabInventory.Location = new System.Drawing.Point(4, 4);
+            this.TabInventory.Name = "TabInventory";
+            this.TabInventory.Padding = new System.Windows.Forms.Padding(3);
+            this.TabInventory.Size = new System.Drawing.Size(247, 308);
+            this.TabInventory.TabIndex = 1;
+            this.TabInventory.Text = "Inventory List";
+            this.TabInventory.UseVisualStyleBackColor = true;
+            // 
+            // LblInventory
+            // 
+            this.LblInventory.FormattingEnabled = true;
+            this.LblInventory.ItemHeight = 20;
+            this.LblInventory.Location = new System.Drawing.Point(7, 6);
+            this.LblInventory.Name = "LblInventory";
+            this.LblInventory.Size = new System.Drawing.Size(235, 184);
+            this.LblInventory.TabIndex = 1;
+            // 
+            // TxtSummery
+            // 
+            this.TxtSummery.Location = new System.Drawing.Point(7, 196);
+            this.TxtSummery.Multiline = true;
+            this.TxtSummery.Name = "TxtSummery";
+            this.TxtSummery.ReadOnly = true;
+            this.TxtSummery.Size = new System.Drawing.Size(234, 106);
+            this.TxtSummery.TabIndex = 2;
             // 
             // VehicleInventoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(307, 354);
             this.Controls.Add(this.tabControl1);
             this.Name = "VehicleInventoryForm";
-            this.Text = "Form1";
+            this.Text = "Vehicle Inventory";
             this.tabControl1.ResumeLayout(false);
-            this.NewVehicleTab.ResumeLayout(false);
-            this.NewVehicleTab.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.TabNewVeh.ResumeLayout(false);
+            this.TabNewVeh.PerformLayout();
+            this.TabInventory.ResumeLayout(false);
+            this.TabInventory.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -172,16 +197,18 @@ namespace VehicleApp
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage NewVehicleTab;
+        private System.Windows.Forms.TabPage TabNewVeh;
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.TextBox TxtLicense;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TabPage TabInventory;
+        private System.Windows.Forms.ListBox LblInventory;
+        private System.Windows.Forms.ComboBox CBxVType;
         private System.Windows.Forms.TextBox TxtVIN;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtSummery;
     }
 }
 

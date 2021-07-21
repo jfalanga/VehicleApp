@@ -159,7 +159,6 @@ namespace VehicleApp
             this.TabInventory.TabIndex = 1;
             this.TabInventory.Text = "Inventory List";
             this.TabInventory.UseVisualStyleBackColor = true;
-            this.TabInventory.Click += new System.EventHandler(this.TabInventory_Click);
             // 
             // TxtSummery
             // 
@@ -188,6 +187,7 @@ namespace VehicleApp
             this.Controls.Add(this.tabControl1);
             this.Name = "VehicleInventoryForm";
             this.Text = "Vehicle Inventory";
+            this.Load += new System.EventHandler(this.VehicleInventoryForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.TabNewVeh.ResumeLayout(false);
             this.TabNewVeh.PerformLayout();

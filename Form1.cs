@@ -40,6 +40,7 @@ namespace VehicleApp
                 v.LicensePlate = TxtLicense.Text;
                 v.VIN = TxtVIN.Text;
                 vehicles.Add(v);
+                LstInventory.DataSource = null;
                 LstInventory.DataSource = vehicles;
                 textBox1.Text = "Sucessfully added " + v.VehicleType;
 
@@ -50,15 +51,15 @@ namespace VehicleApp
             }
         }
 
-        private void TabInventory_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void ListInventory_MDoubleClick(object sender, MouseEventArgs e)
         {
             Vehicle myVehicle = LstInventory.SelectedItem as Vehicle;
             TxtSummery.Text = myVehicle.GetDescription();
+        }
+
+        private void VehicleInventoryForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

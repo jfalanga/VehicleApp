@@ -31,5 +31,13 @@ namespace VehicleApp
         {
             return "Sedan, with License Plate: " + LicensePlate + ", and VIN " + VIN;
         }
+
+        public override string VehicleType
+        {
+            get
+            {
+                return "Sedan";
+            }
+        }
     }
 }

@@ -22,17 +22,29 @@ namespace VehicleApp
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             Vehicle v;
-            switch (CBxVType.Text)
+            try
             {
-                case "Sedan":
-                    v = new Sedan();
-                    break;
-                default:
-                    return;
+                switch (CBxVType.Text)
+                {
+                    case "Sedan":
+                        v = new Sedan();
+                        break;
+                    default:
+                        return;
+                }
+                v.LicensePlate = TxtLicense.Text;
+                v.VIN = TxtVIN.Text;
+                vehicles.Add(v);
+                textBox1.Text = "Sucessfully added " + v.VehicleType;
+            } catch (Exception prob)
+            {
+                textBox1.Text = prob.ToString();
             }
-            v.LicensePlate = TxtLicense.Text;
-            vehicles.Add(v);
-            textBox1.Text="Succ"
+        }
+
+        private void TabInventory_Click(object sender, EventArgs e)
+        {
+            LstInventory.DataSource = vehicles;
         }
     }
 }

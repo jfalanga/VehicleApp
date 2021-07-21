@@ -40,7 +40,7 @@ namespace VehicleApp
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TabInventory = new System.Windows.Forms.TabPage();
-            this.LblInventory = new System.Windows.Forms.ListBox();
+            this.LstInventory = new System.Windows.Forms.ListBox();
             this.TxtSummery = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.TabNewVeh.SuspendLayout();
@@ -150,7 +150,7 @@ namespace VehicleApp
             // TabInventory
             // 
             this.TabInventory.Controls.Add(this.TxtSummery);
-            this.TabInventory.Controls.Add(this.LblInventory);
+            this.TabInventory.Controls.Add(this.LstInventory);
             this.TabInventory.Location = new System.Drawing.Point(4, 4);
             this.TabInventory.Name = "TabInventory";
             this.TabInventory.Padding = new System.Windows.Forms.Padding(3);
@@ -158,15 +158,16 @@ namespace VehicleApp
             this.TabInventory.TabIndex = 1;
             this.TabInventory.Text = "Inventory List";
             this.TabInventory.UseVisualStyleBackColor = true;
+            this.TabInventory.Click += new System.EventHandler(this.TabInventory_Click);
             // 
-            // LblInventory
+            // LstInventory
             // 
-            this.LblInventory.FormattingEnabled = true;
-            this.LblInventory.ItemHeight = 20;
-            this.LblInventory.Location = new System.Drawing.Point(7, 6);
-            this.LblInventory.Name = "LblInventory";
-            this.LblInventory.Size = new System.Drawing.Size(235, 184);
-            this.LblInventory.TabIndex = 1;
+            this.LstInventory.FormattingEnabled = true;
+            this.LstInventory.ItemHeight = 20;
+            this.LstInventory.Location = new System.Drawing.Point(7, 6);
+            this.LstInventory.Name = "LstInventory";
+            this.LstInventory.Size = new System.Drawing.Size(235, 184);
+            this.LstInventory.TabIndex = 1;
             // 
             // TxtSummery
             // 
@@ -204,7 +205,7 @@ namespace VehicleApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage TabInventory;
-        private System.Windows.Forms.ListBox LblInventory;
+        private System.Windows.Forms.ListBox LstInventory;
         private System.Windows.Forms.ComboBox CBxVType;
         private System.Windows.Forms.TextBox TxtVIN;
         private System.Windows.Forms.TextBox textBox1;
